@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100;300;400;500;600;700;800&display=swap');
+
+body {
+  background-color: black;
+}
+
+/* Estilo de la entrada */
+h1 {
+  color: white;
+  margin: 25% 0 2%;
+  font-size: 270%;
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+}
+
+.but a {
+  color: #E6C005;
+  border: none;
+  font-size: 200%;
+  font-weight: bold;
+  font-family: 'Courier Prime', monospace;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  background-color: black;
+}
+
+.but a:hover {
+  color: #FCBB08;
+}
+
+.entrada #LOGO-1 {
+  left: 1%;
+  width: 35%;
+  bottom: 2%;
+  position: absolute;
+}
+
+.entrada #LOGO-2 {
+  right: 2%;
+  width: 8%;
+  bottom: 2%;
+  position: absolute;
+}
+
+/*Estilo de la página principal*/
+.principal {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+main {}
+
+.principal h1 {
+  margin: 6% 0 0;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .entrada h1 {
+    margin: 45% 0 0;
+  }
+
+  .entrada #LOGO-1 {
+    width: 50%;
+  }
+
+  .entrada #LOGO-2 {
+    width: 11%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .entrada h1 {
+    margin: 45% 0 0;
+  }
+
+  .entrada #LOGO-1 {
+    width: 70%;
+  }
+
+  .entrada #LOGO-2 {
+    width: 15%;
+  }
+}

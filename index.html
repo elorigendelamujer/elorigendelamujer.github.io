@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Abril Serrano Espindola">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title>El origen de la mujer</title>
+</head>
+
+<body>
+  <div class="entrada" id="entrada">
+    <h1>El origen de la mujer</h1>
+    <div class="but">
+      <a onclick="alEntrar()">entrar</button>
+    </div>
+    <footer>
+      <img id="LOGO-1" src="img/LOGO_Fonca_C-03.png" alt="Logo Secretaría de Cultura y FONCA (Sistema de Apoyos a la Creación y Proyectos Culturales)">
+      <img id="LOGO-2" src="img/lafo-LOGO-BLANCO.png" alt="Logo Lafo (Laboratorio de arte y fotografía)">
+    </footer>
+  </div>
+  <div class="principal" id="principal">
+    <main>
+      <h1>El origen de la mujer</h1>
+    </main>
+  </div>
+  <script type="text/javascript">
+    function alEntrar() {
+      document.getElementById("entrada").style.display = "none";
+      document.getElementById("principal").style.display = "block";
+      if (screen.width > 1000) {
+        document.body.style.background = "black url('img/_MG_9104-fondo web.jpeg') no-repeat fixed center center";
+        document.body.style.backgroundSize = "cover";
+      }
+    }
+  </script>
+</body>
+
+</html>
