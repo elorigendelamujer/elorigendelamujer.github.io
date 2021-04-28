@@ -6,5 +6,7 @@ Busca expandir los límites de la fotografía, tomando como recursos la elaborac
 
 *Sitio web: [El origen de la mujer](https://elorigendelamujer.github.io)*  
 
+## Autoras
+
 -   **[Carol Espíndola](https://carolespindola.com/)** - _Autora del proyecto. Fotógrafa y ensayista._  
 -   **Abril Serrano** - _Realización de sitio web._  
