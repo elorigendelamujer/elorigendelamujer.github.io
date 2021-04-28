@@ -7,4 +7,4 @@ Busca expandir los límites de la fotografía, tomando como recursos la elaborac
 ## Autores
 
 -   **[Carol Espíndola](https://carolespindola.com/)** - _Fotógrafa y ensayista_
--   **Abril Serrano Espíndola** - _Realización de sitio web_
+-   **Abril Serrano** - _Realización de sitio web_
