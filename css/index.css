@@ -13,7 +13,7 @@ h1 {
   font-family: 'Lexend', sans-serif;
 }
 
-.but a {
+#button {
   color: #E6C005;
   border: none;
   font-size: 200%;
@@ -25,7 +25,7 @@ h1 {
   background-color: black;
 }
 
-.but a:hover {
+#button:hover {
   color: #FCBB08;
 }
 
