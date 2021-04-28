@@ -9,6 +9,8 @@
   <meta name="theme-color" content="#5A7302">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type='text/javascript' src='script/index.js'></script>
+  <script type='text/javascript' src='script/principal.js'></script>
   <title>El origen de la mujer</title>
 </head>
 
@@ -23,19 +25,17 @@
   </div>
   <div class="principal" id="principal">
     <main>
-      <h1>El origen de la mujer</h1>
+
+      <div class="map">
+        <button type="button" onclick="mostrarLucy()" id="i">i</button>
+        <button type="button" onclick="" id="ii">ii</button>
+      </div>
+
+      <img src="img/01_Lucy.png" alt="Lucy" id="img01">
+
     </main>
+    <footer></footer>
   </div>
-  <script>
-    function alEntrar() {
-      document.getElementById("entrada").style.display = "none";
-      document.getElementById("principal").style.display = "block";
-      if (screen.width > 1000) {
-        document.body.style.background = "black url('img/fondo-web.jpeg') no-repeat fixed center center";
-        document.body.style.backgroundSize = "cover";
-      }
-    }
-  </script>
 </body>
 
 </html>
