@@ -9,4 +9,4 @@ Busca expandir los límites de la fotografía, tomando como recursos la elaborac
 ## Autoras
 
 -   **[Carol Espíndola](https://carolespindola.com/)** - _Autora del proyecto. Fotógrafa y ensayista._  
--   **Abril Serrano** - _Realización de sitio web._  
+-   **[Abril Serrano](https://github.com/asetlx)** - _Realización de sitio web._  
