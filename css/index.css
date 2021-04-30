@@ -1,34 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100;300;400;500;600;700;800&display=swap');
+@import url("https://p.typekit.net/p.css?s=1&k=oov2wcw&ht=tk&f=39203&a=2613646&app=typekit&e=css");
 
 body {
   background-color: black;
+  padding: 0;
+  margin: 0;
 }
 
-/* Estilo de la entrada */
-h1 {
+/* ----- Estilo de la entrada ----- */
+#entrada {
+  position: fixed;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: 0.2s;
+}
+
+#titulo1 {
   color: white;
   margin: 25% 0 2%;
-  font-size: 270%;
+  font-size: 350%;
   text-align: center;
-  font-family: 'Lexend', sans-serif;
+  font-family: "century-gothic", sans-serif;
+  font-weight: bold;
+  transition: 0.5s;
 }
 
-.entrada a {
-  color: #E6C005;
-  border: none;
-  font-size: 200%;
-  font-weight: bold;
-  font-family: 'Courier Prime', monospace;
-  text-decoration: none;
+/* link para entrar */
+.entrada p {
   text-align: center;
   display: block;
+}
+
+#selecEntrar {
+  color: #DCAF04;
+  border: none;
+  font-size: 200%;
+  font-weight: 700;
+  font-family: 'Courier Prime', monospace;
+  text-decoration: none;
   background-color: black;
+  transition: 0.3s;
+  cursor: pointer;
+  letter-spacing: 0.05em;
 }
 
-.entrada a:hover {
-  color: #FCBB08;
+#selecEntrar:hover {
+  color: #FAD30F;
+  font-size: 210%;
 }
 
+/* logos de la parte inferior de la página */
 .entrada #LOGO-1 {
   left: 1%;
   width: 35%;
@@ -43,42 +67,144 @@ h1 {
   position: absolute;
 }
 
-/*Estilo de la página principal*/
-.principal {
+/* ----- Estilo de la página principal ----- */
+#principal {
   display: none;
   padding: 0;
   margin: 0;
 }
 
 main {
-  margin: 5% 10%;
+  margin: 0;
+  padding: 0;
 }
 
-/* Links a las distintas piezas (parecido a map pero es responsive)*/
-button {
+/* - Links a las distintas piezas (parecido a map pero es responsive) - */
+.map {
   background-color: rgb(255, 255, 255, 0.5);
+  border: none;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s;
+  font-family: "century-gothic", sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  text-align: left;
+  border: solid black 2.5px;
+  letter-spacing: 0.03em;
+  width: auto;
+  height: auto;
+  padding: 0.2% 0.8% 0.2% 0.2%;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 6px rgb(0, 0, 0, 0.3));
+}
+
+.map:hover {
+  opacity: 1;
+}
+
+#c01 {
+  top: 35%;
+  left: 22%;
+}
+
+#ii {
+  top: 38%;
+  left: 66%;
+}
+
+#iii {
+  top: 62%;
+  left: 80%;
+}
+
+#iv {
+  top: 57%;
+  left: 54%;
+}
+
+#v {
+  top: 58%;
+  left: 42%;
+}
+
+#vi {
+  top: 85%;
+  left: 41%;
+}
+
+#vii {
+  top: 55%;
+  left: 30%;
+  transform: scale(0.8);
+}
+
+#viii {
+  top: 53%;
+  left: 7%;
+}
+
+#ix {
+  top: 48%;
+  left: 60%;
+  transform: scale(0.8);
+}
+
+#x {
+  top: 63%;
+  left: 63%;
+  transform: scale(0.8);
+}
+
+#xi {
+  top: 35%;
+  left: 44%;
+}
+
+/* - Contenedores de las piezas que salen al darle clic a los links - */
+#container-imgc01 {
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+/* Títulos de las piezas dentro de los contenedores */
+.containers p {
+  display: block;
+  width: 12%;
+  font-family: "century-gothic", sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+  float: left;
+  margin: 5% 0 0 3%;
+}
+
+#imgc01 {
+  display: none;
+  width: 75%;
+}
+
+/* Botón para salir de la pieza */
+.close {
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  font-size: 350%;
+  transition: 0.6s;
+  background-color: rgb(255, 255, 255, 0);
+  cursor: pointer;
+  padding: 0;
   border: none;
   position: absolute;
 }
 
-#i {
-  top: 28%;
-  left: 26%;
-  width: 12%;
-  height: 15%;
+.close:hover {
+  transform: rotate(180deg);
 }
 
-#ii {
-  top: 37%;
-  left: 67%;
-  width: 17%;
-  height: 14%;
-}
-
-#img01 {
-  display: none;
-}
-
+/* responsive para los diferentes tamños de pantalla */
 @media screen and (max-width: 1000px) {
   .entrada h1 {
     margin: 45% 0 0;
