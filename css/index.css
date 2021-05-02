@@ -217,7 +217,7 @@ main {
 
 /* responsive para los diferentes tamños de pantalla */
 @media screen and (max-width: 1030px) {
-  .titulo1 {
+  #titulo1 {
     margin: 45% 0 0;
   }
 
@@ -234,9 +234,11 @@ main {
     display: block;
     border: none;
     height: auto;
-    padding: 10%;
+    padding: 8%;
     opacity: 1;
     position: relative;
+    margin: 0;
+    font-size: 200%;
   }
 
   #c01, #ii, #iii, #iv, #v, #vi, #vii, #viii, #ix, #x, #xi {
@@ -283,15 +285,15 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-  .entrada h1 {
-    margin: 45% 0 0;
-  }
-
   .entrada #LOGO-1 {
     width: 70%;
   }
 
   .entrada #LOGO-2 {
     width: 15%;
+  }
+
+  .map {
+    font-size: 170%;
   }
 }
