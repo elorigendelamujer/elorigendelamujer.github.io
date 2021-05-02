@@ -81,8 +81,7 @@ main {
 
 /* - Links a las distintas piezas (parecido a map pero es responsive) - */
 .map {
-  background-color: rgb(255, 255, 255, 0.5);
-  border: none;
+  background-color: rgb(255, 255, 255, 0.8);
   position: absolute;
   opacity: 0;
   transition: 0.2s;
@@ -94,7 +93,7 @@ main {
   letter-spacing: 0.03em;
   width: auto;
   height: auto;
-  padding: 0.2% 0.8% 0.2% 0.2%;
+  padding: 0.2% 0.2% 0.2% 0.2%;
   cursor: pointer;
   filter: drop-shadow(5px 5px 6px rgb(0, 0, 0, 0.3));
 }
@@ -106,31 +105,36 @@ main {
 #c01 {
   top: 35%;
   left: 22%;
+  width: 14%;
 }
 
 #ii {
   top: 38%;
   left: 66%;
+  width: 23%;
 }
 
 #iii {
   top: 62%;
   left: 80%;
+  width: 11%;
 }
 
 #iv {
   top: 57%;
   left: 54%;
+  width: 7%;
 }
 
 #v {
   top: 58%;
   left: 42%;
+  width: 8%;
 }
 
 #vi {
   top: 85%;
-  left: 41%;
+  left: 42%;
 }
 
 #vii {
@@ -142,12 +146,14 @@ main {
 #viii {
   top: 53%;
   left: 7%;
+  width: 13%;
 }
 
 #ix {
   top: 48%;
   left: 60%;
   transform: scale(0.8);
+  width: 7%
 }
 
 #x {
@@ -162,27 +168,32 @@ main {
 }
 
 /* - Contenedores de las piezas que salen al darle clic a los links - */
-#container-imgc01 {
+.containers {
   padding: 0;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
+  display: none;
+  bottom: 5%;
+  position: absolute;
   background-color: rgb(255, 255, 255, 0.5);
+  padding: 0 12%;
 }
 
 /* Títulos de las piezas dentro de los contenedores */
 .containers p {
   display: block;
-  width: 12%;
+  width: 90%;
   font-family: "century-gothic", sans-serif;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 250%;
   float: left;
-  margin: 5% 0 0 3%;
+  margin: 1% 0 0 0;
 }
 
+/* imágenes */
 #imgc01 {
   display: none;
-  width: 75%;
+  width: 100%;
 }
 
 /* Botón para salir de la pieza */
@@ -205,8 +216,8 @@ main {
 }
 
 /* responsive para los diferentes tamños de pantalla */
-@media screen and (max-width: 1000px) {
-  .entrada h1 {
+@media screen and (max-width: 1030px) {
+  .titulo1 {
     margin: 45% 0 0;
   }
 
@@ -216,6 +227,58 @@ main {
 
   .entrada #LOGO-2 {
     width: 11%;
+  }
+
+  .map {
+    background-color: white;
+    display: block;
+    border: none;
+    height: auto;
+    padding: 10%;
+    opacity: 1;
+    position: relative;
+  }
+
+  #c01, #ii, #iii, #iv, #v, #vi, #vii, #viii, #ix, #x, #xi {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(1);
+    background-color: #012340;
+    color: white;
+  }
+
+  #ii, #vi, #x {
+    background-color: #5A7302;
+    color: white;
+  }
+
+  #iii, #vii, #xi {
+    background-color: #B68602;
+    color: white;
+  }
+
+  #iv, #viii {
+    background-color: #966B4A;
+    color: white;
+  }
+
+  .containers {
+    padding: 0;
+    opacity: 0;
+    transition: 0.3s;
+    display: none;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 1);
+    padding: 0;
+  }
+
+  .close {
+    font-size: 250%;
   }
 }
 

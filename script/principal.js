@@ -3,7 +3,6 @@ function mostrar(id) {
   var container = "container-img" + id;
   document.getElementById(img).style.display = "inline-block";
   document.getElementById(container).style.display = "block";
-  document.getElementById(container).style.transition = "0.5s";
   ocultarMap();
   document.getElementById(container).style.opacity = "1";
 }
@@ -20,6 +19,6 @@ function cerrarImagen(id) {
   document.getElementById(id).style.opacity = "0";
   setTimeout(function() {
     document.getElementById(id).style.display = "none";
-  }, 500);
+  }, 300);
   mostrarMap();
 }

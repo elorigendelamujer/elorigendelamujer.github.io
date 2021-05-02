@@ -6,7 +6,7 @@ function alEntrar() {
 
 function nuevaPagina() {
   document.getElementById("principal").style.display = "block";
-  if (screen.width > 1000) {
+  if (screen.width > 1030) {
     document.body.style.background = "url('img/fondo-web.jpeg') black no-repeat fixed center center";
     document.body.style.backgroundSize = "cover";
   }
